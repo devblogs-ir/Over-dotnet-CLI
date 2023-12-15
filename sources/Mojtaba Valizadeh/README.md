@@ -19,3 +19,7 @@ cd .\src\
 ```
  dotnet new classlib -n ClassLibProject
 ``` 
+5. Create a webapi project in src dir.
+```
+ dotnet new webapi -n WebApiProject
+``` 
