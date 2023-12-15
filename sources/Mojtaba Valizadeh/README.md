@@ -39,4 +39,12 @@ cd .\src\
  cd .\ClassLibProject.Test\
   dotnet add reference  ..\..\src\ClassLibProject\
   dotnet add package FluentAssertions
+```
+8. go to test folder and create test project for classlib project
+```
+ cd ..
+ dotnet new xunit -n WebApiProject.Test
+ cd .\WebApiProject.Test\
+ dotnet add reference  ..\..\src\WebApiProject\
+ dotnet add package FluentAssertions
 ``` 
