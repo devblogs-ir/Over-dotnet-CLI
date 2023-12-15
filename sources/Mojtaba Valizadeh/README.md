@@ -23,3 +23,12 @@ cd .\src\
 ```
  dotnet new webapi -n WebApiProject
 ``` 
+6. go to test folder and create test project for console project
+```
+ cd ..
+ cd .\test\
+ dotnet new xunit -n ConsoleProject.Test
+ cd .\ConsoleProject.Test\
+ dotnet add reference  ../../src/ConsoleProject
+ dotnet add package FluentAssertions
+``` 
