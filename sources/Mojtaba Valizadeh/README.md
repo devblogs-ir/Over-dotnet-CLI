@@ -29,6 +29,14 @@ cd .\src\
  cd .\test\
  dotnet new xunit -n ConsoleProject.Test
  cd .\ConsoleProject.Test\
- dotnet add reference  ../../src/ConsoleProject
+ dotnet add reference  ..\..\src\ConsoleProject\
  dotnet add package FluentAssertions
+``` 
+7. go to test folder and create test project for classlib project
+```
+ cd ..
+ dotnet new xunit -n ClassLibProject.Test
+ cd .\ClassLibProject.Test\
+  dotnet add reference  ..\..\src\ClassLibProject\
+  dotnet add package FluentAssertions
 ``` 
