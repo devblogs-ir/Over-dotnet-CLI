@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\TestLib\TestLib.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <RootNamespace>Test_Packages</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+	  <PackAsTool>true</PackAsTool>
+	  <ToolCommandName>Test-Packages</ToolCommandName>
+	  <PackageOutputPath>.\package</PackageOutputPath>
+  </PropertyGroup>
+
+</Project>
