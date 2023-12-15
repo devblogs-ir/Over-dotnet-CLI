@@ -15,3 +15,5 @@ Here you can follow these guys.
 
 
 | ? | xxxx | [blog](https://balabalbla) |
+
+| ? | Mojtaba Valizadeh| [blog](https://www.linkedin.com/in/mojtaba-valizade/) |
