@@ -9,5 +9,9 @@ md src
 ```
 md test
 ``` 
-
+3. Create a console project in src dir.
+```
+cd .\src\
+ dotnet new console -n ConsoleProject
+``` 
 
