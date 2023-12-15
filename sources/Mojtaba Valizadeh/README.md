@@ -15,3 +15,7 @@ cd .\src\
  dotnet new console -n ConsoleProject
 ``` 
 
+4. Create a class library project in src dir.
+```
+ dotnet new classlib -n ClassLibProject
+``` 
