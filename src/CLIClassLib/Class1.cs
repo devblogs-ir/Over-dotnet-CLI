@@ -1,4 +1,4 @@
-﻿namespace CLIClasslib;
+﻿namespace CLIClassLib;
 
 public class Class1
 {
