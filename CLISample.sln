@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CLIConsole", "src\CLIConsol
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CLIClassLib", "src\CLIClassLib\CLIClassLib.csproj", "{38B39BD0-6EE4-4FA6-AEA9-0488BD84A0F4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CLIWebApi", "src\CLIWebApi\CLIWebApi.csproj", "{1CC6FA8D-DB3E-49C8-88B8-71EE15ACD611}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{38B39BD0-6EE4-4FA6-AEA9-0488BD84A0F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38B39BD0-6EE4-4FA6-AEA9-0488BD84A0F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38B39BD0-6EE4-4FA6-AEA9-0488BD84A0F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CC6FA8D-DB3E-49C8-88B8-71EE15ACD611}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CC6FA8D-DB3E-49C8-88B8-71EE15ACD611}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CC6FA8D-DB3E-49C8-88B8-71EE15ACD611}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CC6FA8D-DB3E-49C8-88B8-71EE15ACD611}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +38,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{DD9E2EC1-3127-43A2-B64C-7F535FC859E2} = {88B6A01D-7CF2-4EE3-B26B-30523A916B1F}
 		{38B39BD0-6EE4-4FA6-AEA9-0488BD84A0F4} = {88B6A01D-7CF2-4EE3-B26B-30523A916B1F}
+		{1CC6FA8D-DB3E-49C8-88B8-71EE15ACD611} = {88B6A01D-7CF2-4EE3-B26B-30523A916B1F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C3216249-FE26-422E-A9F1-BD1741EF3C25}
