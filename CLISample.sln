@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CLIClasslib", "src\CLIClass
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{88B6A01D-7CF2-4EE3-B26B-30523A916B1F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CLIApi", "src\CLIApi\CLIApi.csproj", "{AF1E9A04-FD52-43DF-9E2E-22064630E5B6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{309F3112-30D8-48E0-86AD-E55C870CA49B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{309F3112-30D8-48E0-86AD-E55C870CA49B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{309F3112-30D8-48E0-86AD-E55C870CA49B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF1E9A04-FD52-43DF-9E2E-22064630E5B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF1E9A04-FD52-43DF-9E2E-22064630E5B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF1E9A04-FD52-43DF-9E2E-22064630E5B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF1E9A04-FD52-43DF-9E2E-22064630E5B6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -30,5 +36,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{003033DE-689D-47E0-8E4F-BD55FCD836F3} = {88B6A01D-7CF2-4EE3-B26B-30523A916B1F}
 		{309F3112-30D8-48E0-86AD-E55C870CA49B} = {88B6A01D-7CF2-4EE3-B26B-30523A916B1F}
+		{AF1E9A04-FD52-43DF-9E2E-22064630E5B6} = {88B6A01D-7CF2-4EE3-B26B-30523A916B1F}
 	EndGlobalSection
 EndGlobal
