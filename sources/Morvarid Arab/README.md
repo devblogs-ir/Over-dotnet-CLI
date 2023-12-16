@@ -66,3 +66,33 @@ cd .\SrcWebApi_Test\
 dotnet add package FluentAssertions
 dotnet add reference ..\..\src\SrcWebApi\
 ```
+
+
+# Exercise 2
+1. Create a new directory and add a new Console project to it:
+```
+md maha-builder
+dotnet new console -n maha-builder
+```
+
+2. Open the maha-builder.csproj file and add these three XML nodes:
+```
+<PackAsTool>true</PackAsTool>
+<ToolCommandName>maha-builder</ToolCommandName>
+<PackageOutputPath>./pkg</PackageOutputPath>
+```
+
+3. Create a new NuGet package:
+```
+dotnet pack
+```
+
+4. Install the tool from the package using *globally*
+```
+dotnet tool install --global --add-source .\pkg\ maha-builder
+```
+
+5. Use the new custom command:
+```
+maha-builder -name "Morvarid-Arab"
+```
