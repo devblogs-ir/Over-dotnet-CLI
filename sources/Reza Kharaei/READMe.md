@@ -42,7 +42,14 @@ cd ../DotNetCliExample.Library.Test
 add reference ../../Src/DotNetCliExample.Library 
 ```
 
-6. Finally, we should add all project created in own solution :
+6. now, install package in Test Projects:
+```
+dotnet add package FluentAssertions --version 6.12.0
+```
+> **Note:**
+> before run above command, you should go to each project's folder with
+
+7. finally, we should add all project created in own solution :
 ```
  dotnet sln add Src/DotNetCliExample.Console
  dotnet sln add Src/DotNetCliExample.Library
