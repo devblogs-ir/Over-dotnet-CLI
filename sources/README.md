@@ -14,4 +14,4 @@ Here you can follow these guys.
 
 
 
-| ? | xxxx | [blog](https://balabalbla) |
+| ? | Abolfazl Kabiri | [blog](https://www.linkedin.com/in/abolfazl-kabiri-64a018108/) |
