@@ -1,47 +1,34 @@
-
-# Great to you
-## this read me helps you to create a new dotnet project
-## 1: Create a Solution
+# Hello to you
+* this read me helps you to create a new .NET project :
+## Part One : You can use the following commands one by one
+### 1: Create a Solution
 ```bash
 #create a directory for src
-mkdir src
+md ArashKazemzade
+cd .\ArashKazemzade\
+md src
 cd .\src\
-#create a sln in src
 dotnet new sln -n Over-dotnet-CLI
 ```
-## 2: Create a Console Application
+### 2: Create a Console Application
 ```bash 
-dotnet new console -n ConsoleAppForOver-dotnet-CLI
+dotnet new console -n Console.src
 ```
-## 3: Create a Class Library 
+### 3: Create a Class Library 
 ```bash 
-dotnet new classlib -n class-library-name
+dotnet new classlib -n classlibrary.src
 ```
-## 4: Create a Web API Application 
+### 4: Create a Web API App
 ```bash 
-dotnet new classlib -n WebApplicationOver-dotnet-CLI
+dotnet new classlib -n WebApplication.src
 ```
-## 5: Createing Test Projects
+### 5: Createing Test Projects
 ```bash
-#create a directory for tests
-mkdir tests
+cd ..
+md tests
 cd .\tests\
-# create test projects
-dotnet new xunit Console.Tests
-dotnet new xunit WebApi.Tests
-dotnet new xunit ClassLibrary.Tests
+dotnet new xunit -n Console.Tests
+dotnet new xunit -n WebApi.Tests
+dotnet new xunit -n ClassLibrary.Tests
 ```
-## 6: adding Nuget package to test projects: 
-```bash 
-# create a directory for mha-builder
-mkdir mha-builder cd .\mha-builder\
-
-# for adding nuget packages
-dotnet add package package-name or id
-
-# for adding project refrence
-dotnet add refrence address-of-project-you-want-to-add-the-refrence
-
-# move to each project directory then run the following command
-dotnet add package FluentAssertions
-```
+## Part two : You can run all commands at once by running the mha-builder.bat in the mha-builder folder
