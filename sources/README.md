@@ -9,3 +9,4 @@ Here you can follow these guys.
 | ? | Mahdi Salahinia | [blog](https://www.linkedin.com/in/mahdi-salahinia/) |
 | ? | Mohammad Zarei | [linkedin](https://www.linkedin.com/in/mohammadzarei1999/) |
 | ? | Fatemeh Vahdati | [blog](https://www.linkedin.com/in/fatemeh-vahdati-259235b5/) |
+| ? | Nazanin Abbasi | [blog](https://www.linkedin.com/in/n-abbasi/) |
