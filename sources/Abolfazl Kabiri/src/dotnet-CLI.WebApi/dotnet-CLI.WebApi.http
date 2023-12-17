@@ -1,0 +1,6 @@
+@dotnet_CLI.WebApi_HostAddress = http://localhost:5056
+
+GET {{dotnet_CLI.WebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
