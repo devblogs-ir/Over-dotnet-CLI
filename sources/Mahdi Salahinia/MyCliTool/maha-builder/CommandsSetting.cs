@@ -29,63 +29,65 @@ namespace maha_builder
         public static void WriteCommands(string folderName)
         {
             Directory.CreateDirectory(folderName);
+
             Console.WriteLine($"Created folder '{folderName}'.");
 
             Environment.CurrentDirectory = folderName;
 
             Directory.CreateDirectory(Commands.SrcDirectory);
+
             Directory.CreateDirectory(Commands.TestDirectory);
 
             Environment.CurrentDirectory = Commands.SrcDirectory;
 
             Console.WriteLine("Creating a new console project ...");
-            CommandsSetting.ExecuteCliCommands(Commands.CreateConsoleProj);
+            ExecuteCliCommands(Commands.CreateConsoleProj);
 
             Console.WriteLine("Creating a new classLib project ...");
-            CommandsSetting.ExecuteCliCommands(Commands.CreateClassLibProj);
+            ExecuteCliCommands(Commands.CreateClassLibProj);
 
             Console.WriteLine("Creating a new webapi project ...");
-            CommandsSetting.ExecuteCliCommands(Commands.CreateWebApiProj);
+            ExecuteCliCommands(Commands.CreateWebApiProj);
 
             Environment.CurrentDirectory = Path.Combine(Environment.CurrentDirectory, "..");
 
             Environment.CurrentDirectory = Commands.TestDirectory;
 
 
-            CommandsSetting.ExecuteCliCommands(Commands.CreateConsoleTestProj);
+            ExecuteCliCommands(Commands.CreateConsoleTestProj);
 
             Environment.CurrentDirectory = Commands.ConsoleTestProjDirectory;
 
             var consoleReferenceCommandToTestProj = $"{Commands.AddReference} ..\\..\\{Commands.SrcDirectory}\\{Commands.ConsoleProjDirectory}";
             
-            CommandsSetting.ExecuteCliCommands(consoleReferenceCommandToTestProj);
+            ExecuteCliCommands(consoleReferenceCommandToTestProj);
 
-            // Add FluentAssertions nuget package 
-            CommandsSetting.ExecuteCliCommands(Commands.AddFluentAssertionPackage);
+            ExecuteCliCommands(Commands.AddFluentAssertionPackage);
 
-            //Go to test directory
             Environment.CurrentDirectory = Path.Combine(Environment.CurrentDirectory, "..");
 
-            CommandsSetting.ExecuteCliCommands(Commands.CreateClassLibTestProj);
+            ExecuteCliCommands(Commands.CreateClassLibTestProj);
+
             Environment.CurrentDirectory = Commands.ClassLibTestProjDirectory;
-            //Add ClassLibProject refrence to this project 
-            var classLibReferenceCommandToTestProj = $"{Commands.AddReference} ..\\..\\{Commands.SrcDirectory}\\{Commands.ClassLibProjDirectory}";
-            CommandsSetting.ExecuteCliCommands(classLibReferenceCommandToTestProj);
 
-            CommandsSetting.ExecuteCliCommands(Commands.AddFluentAssertionPackage);
+            var classLibReferenceCommandToTestProj = $"{Commands.AddReference} ..\\..\\{Commands.SrcDirectory}\\{Commands.ClassLibProjDirectory}";
+            
+            ExecuteCliCommands(classLibReferenceCommandToTestProj);
+
+            ExecuteCliCommands(Commands.AddFluentAssertionPackage);
 
 
             Environment.CurrentDirectory = Path.Combine(Environment.CurrentDirectory, "..");
 
-            CommandsSetting.ExecuteCliCommands(Commands.CreateWebApiTestProj);
+            ExecuteCliCommands(Commands.CreateWebApiTestProj);
 
             Environment.CurrentDirectory = Commands.WebApiTestProjDirectory;
 
             var webApiReferenceCommandToTestProj = $"{Commands.AddReference} ..\\..\\{Commands.SrcDirectory}\\{Commands.WebApiProjDirectory}";
 
-            CommandsSetting.ExecuteCliCommands(webApiReferenceCommandToTestProj);
+            ExecuteCliCommands(webApiReferenceCommandToTestProj);
 
-            CommandsSetting.ExecuteCliCommands(Commands.AddFluentAssertionPackage);
+            ExecuteCliCommands(Commands.AddFluentAssertionPackage);
         }
     }
 }
