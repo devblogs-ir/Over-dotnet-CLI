@@ -14,4 +14,4 @@ Here you can follow these guys.
 
 
 
-| ? | xxxx | [blog](https://balabalbla) |
+| ? | Reza kharaei | [Linkedin](https://www.linkedin.com/in/kharaei) |

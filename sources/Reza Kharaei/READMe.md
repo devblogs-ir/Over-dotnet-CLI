@@ -1,5 +1,5 @@
 # .Net Cli Example
-> Here are examples of working with .NET CLI written by [Reza kharaeu](https://kharaei.ir)
+> Here are examples of working with .NET CLI written by [Reza kharaei](https://kharaei.ir)
 
 1. Make own Foldering :
 ```
