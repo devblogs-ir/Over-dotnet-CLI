@@ -24,7 +24,7 @@ dotnet new classlib -n WebApplication.src
 ```
 ### 5: Createing Test Projects
 ```bash
-cd ..
+cd .. 
 md tests
 cd .\tests\
 dotnet new xunit -n Console.Tests
