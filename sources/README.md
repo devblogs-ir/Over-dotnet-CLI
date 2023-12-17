@@ -14,4 +14,4 @@ Here you can follow these guys.
 
 
 
-| ? | xxxx | [blog](https://balabalbla) |
+| ? | Mohammad Zarei | [linkedin](https://www.linkedin.com/in/mohammadzarei1999/) |
