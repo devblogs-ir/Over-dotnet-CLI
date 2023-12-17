@@ -8,3 +8,66 @@ If you have any questions or need further information, please feel free to reach
 Additionally, I encourage you to explore my other projects on [GitHub](https://github.com/AlirezaAskariKochi), where I share various works that might interest you. Your feedback and contributions to those projects are always welcome!
 
 ---
+# Folow below cods step by step to creat the project
+1. Creat a folder
+```
+md MentoringFirstProject
+cd MentoringFirstProject
+```
+2. creat an soluition 
+```
+dotnet new sln -n MentoringFirstProject
+```
+
+3. Create Console Project in src folder:
+```
+md src
+cd src
+dotnet new console --name "ConsoleProject"
+```
+4. Create Class Library Project in src folder:
+```
+dotnet new classlib --name ClassLibraryProject
+```
+5. Create Web API Project in src folder:
+```
+dotnet new webapi --name WebApiProject
+```
+# _Test_
+6. Create Test Projects:
+```
+cd ../MentoringFiorstProject
+md tests
+cd tests
+```
+
+>a. Console Project Test:
+```
+dotnet new xunit -n "ConsoleProject.Tests"
+cd "ConsoleProject.Tests"
+dotnet add package FluentAssertions
+dotnet add reference ../../src/ConsolProject/ConsolProject.csproj
+```
+
+>b. Class Library Project Test:
+```
+cd ..
+dotnet new xunit -n ClassLibraryProject.Tests
+cd ClassLibraryProject.Tests
+dotnet add package FluentAssertions
+dotnet add reference ../../src/ClassLibraryProject/ClassLibraryProject.csproj
+```
+> c. Web API Project Test:
+```
+cd ..
+dotnet new xunit -n WebApiProject.Tests
+cd WebApiProject.Tests
+dotnet add package FluentAssertions
+dotnet add reference ../../src/WebAiProject/WebAiProject.csproj
+```
+
+6. Git Commit - Initial Projects:
+```
+git add -A
+git commit -m "Initial Projects ConsoleProject, ClassLibraryProject, WebApiProject ,ConsoleProject.Tests, ClassLibraryProject.Tests, WebApiProject.Tests"
+```
