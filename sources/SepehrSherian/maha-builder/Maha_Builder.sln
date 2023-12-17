@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maha_Builder", "Maha_Builder\Maha_Builder.csproj", "{3514347F-8247-4B7B-AFC2-48BAA9183626}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandTemplates", "CommandTemplates\CommandTemplates.csproj", "{D1A1BBFA-BC8E-4F7A-A581-C32BD86AFA9D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3514347F-8247-4B7B-AFC2-48BAA9183626}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3514347F-8247-4B7B-AFC2-48BAA9183626}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3514347F-8247-4B7B-AFC2-48BAA9183626}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3514347F-8247-4B7B-AFC2-48BAA9183626}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1A1BBFA-BC8E-4F7A-A581-C32BD86AFA9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1A1BBFA-BC8E-4F7A-A581-C32BD86AFA9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1A1BBFA-BC8E-4F7A-A581-C32BD86AFA9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1A1BBFA-BC8E-4F7A-A581-C32BD86AFA9D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
