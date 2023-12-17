@@ -3,6 +3,9 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net8.0</TargetFramework>
+	  <PackAsTool>true</PackAsTool>
+	  <ToolCommandName>maha-builder</ToolCommandName>
+	  <PackageOutputPath>./pkg</PackageOutputPath>
     <RootNamespace>maha_builder</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>

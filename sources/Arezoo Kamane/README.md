@@ -78,6 +78,15 @@ cd .\test\
 
 
 ## CLI tool for creating top structure in one command 
+1. Pack it 
+```
+dotnet pack
+```
+2. install package globally 
+```
+dotnet tool install --global --add-source .\pkg\maha-builder
+```
+
 use -n or --name as an required option for specifying project folder name. 
 ```
 maha-builder -n FolderName
