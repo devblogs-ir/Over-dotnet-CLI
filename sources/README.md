@@ -14,3 +14,4 @@ Here you can follow these guys.
 | ? | Hamidreza Rahmani| [blog](https://www.linkedin.com/in/hamidreza-rahmani-67730a198/) |
 | ? | Amir Fazlali| [blog](https://www.linkedin.com/in/amir-fazlali//) |
 | ? | Mojtaba Valizadeh| [blog](https://www.linkedin.com/in/mojtaba-valizade/) |
+| ? | Sepehr Sherian | [blog](https://www.linkedin.com/in/sepehr-shairian-3b1024109) |
