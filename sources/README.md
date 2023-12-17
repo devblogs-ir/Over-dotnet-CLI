@@ -15,3 +15,4 @@ Here you can follow these guys.
 
 
 | ? | xxxx | [blog](https://balabalbla) |
+| ? | Nazanin Abbasi | [blog](https://www.linkedin.com/in/n-abbasi/) |
