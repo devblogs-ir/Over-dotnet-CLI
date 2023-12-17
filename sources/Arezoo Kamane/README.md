@@ -78,6 +78,8 @@ cd .\test\
 
 
 ## CLI tool for creating top structure in one command 
+use -n or --name as an required option for specifying project folder name. 
 ```
-
+maha-builder -n FolderName
+maha-builder --name FolderName
 ```
