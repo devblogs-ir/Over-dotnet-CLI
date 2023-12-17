@@ -10,35 +10,33 @@ if (args.Length != 1)
 string folderName = args[0];
 
 Directory.CreateDirectory(folderName);
-Console.WriteLine("folder '{folderName}' created.");
+Console.WriteLine($"folder '{folderName}' created.");
 
-string SrcPath = Path.Combine(folderName, "Src");
-Directory.CreateDirectory(SrcPath);
+Directory.CreateDirectory(folderName + "/Src");
 Console.WriteLine("folder 'Src' created.");
 
-string TestPath = Path.Combine(folderName, "Test");
-Directory.CreateDirectory(TestPath);
+Directory.CreateDirectory(folderName + "/Test");
 Console.WriteLine("folder 'Test' created.");
 
 RunDotnetCommand("dotnet new sln DotNetCliExample");
 Console.WriteLine("Blank Solution Created.");
 
-RunDotnetCommand($"dotnet new console -n DotNetCliExample.Console --output {SrcPath}");
+RunDotnetCommand($"dotnet new console -n DotNetCliExample.Console --output {folderName}/Src/DotNetCliExample.Console");
 Console.WriteLine("Console Project Created.");
 
-RunDotnetCommand($"dotnet new classlib -n DotNetCliExample.Library --output {SrcPath}");
+RunDotnetCommand($"dotnet new classlib -n DotNetCliExample.Library --output {folderName}/Src/DotNetCliExample.Library");
 Console.WriteLine("Class Library Project Created.");
 
-RunDotnetCommand($"dotnet new webapi -n DotNetCliExample.WebApi --output {SrcPath}");
+RunDotnetCommand($"dotnet new webapi -n DotNetCliExample.WebApi --output {folderName}/Src/DotNetCliExample.WebApi");
 Console.WriteLine("WebApi ProjectsCreated.");
 
-RunDotnetCommand($"dotnet new xunit -n DotNetCliExample.Console.Test --output {TestPath}");
+RunDotnetCommand($"dotnet new xunit -n DotNetCliExample.Console.Test --output {folderName}/Test/DotNetCliExample.Console.Test");
 Console.WriteLine("Console.Test Project Created.");
 
-RunDotnetCommand($"dotnet new xunit -n DotNetCliExample.Library.Test --output {TestPath}");
+RunDotnetCommand($"dotnet new xunit -n DotNetCliExample.Library.Test --output {folderName}/Test/DotNetCliExample.Library.Test");
 Console.WriteLine("Library.Test Project Created.");
 
-RunDotnetCommand($"dotnet new xunit -n DotNetCliExample.WebApi.Test --output {TestPath}");
+RunDotnetCommand($"dotnet new xunit -n DotNetCliExample.WebApi.Test --output {folderName}/Test/DotNetCliExample.WebApi.Test");
 Console.WriteLine("WebApi.Test Project Created.");
 
 Console.WriteLine("MahaBuilder completed successfully.");
