@@ -22,4 +22,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\MyClassLibProj\MyClassLibProj.csproj" />
+  </ItemGroup>
+
 </Project>
