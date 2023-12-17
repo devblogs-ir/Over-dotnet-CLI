@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "moha-builder": {
+      "commandName": "Project",
+      "commandLineArgs": "--name \"MohammadZarei\""
+    }
+  }
+}
