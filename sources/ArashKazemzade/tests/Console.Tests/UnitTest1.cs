@@ -1,4 +1,4 @@
-namespace webapi_project.test;
+namespace Console.Tests;
 
 public class UnitTest1
 {
