@@ -51,7 +51,7 @@ Console.WriteLine("Start Create Tests ...");
 
 var ConsoleProject_Tests = NewCommand.MakeNewProject("xunit", "ConsoleProject.Tests");
 RunCommand.Run(ConsoleProject_Tests);
-Environment.CurrentDirectory = "ConsoleProject.Test";
+Environment.CurrentDirectory = "ConsoleProject.Tests";
 
 var pakage_1 = AddPackage.Add("FluentAssertions");
 RunCommand.Run(pakage_1);
@@ -59,18 +59,20 @@ RunCommand.Run(pakage_1);
 var ref_1 = AddReference.Add("..\\..\\src\\ConsoleProject\\.ConsoleProject.csproj");
 RunCommand.Run(ref_1);
 
+Environment.CurrentDirectory = Path.Combine(Environment.CurrentDirectory, "..");
 var ClassLibraryProject_Tests = NewCommand.MakeNewProject("xunit", "ClassLibraryProject.Tests");
 RunCommand.Run(ClassLibraryProject_Tests);
-Environment.CurrentDirectory = "ClassLibraryProject.Test";
+Environment.CurrentDirectory = "ClassLibraryProject.Tests";
 var pakage_2 = AddPackage.Add("FluentAssertions");
 RunCommand.Run(pakage_2);
 
 var ref_2 = AddReference.Add("..\\..\\src\\ClassLibraryProject\\.ClassLibraryProject.csproj");
 RunCommand.Run(ref_2);
 
+Environment.CurrentDirectory = Path.Combine(Environment.CurrentDirectory, "..");
 var WebAPIProject_Tests = NewCommand.MakeNewProject("xunit", "WebAPIProject.Tests");
 RunCommand.Run(WebAPIProject_Tests);
-Environment.CurrentDirectory = "WebAPIProject.Test";
+Environment.CurrentDirectory = "WebAPIProject.Tests";
 var pakage_3 = AddPackage.Add("FluentAssertions");
 RunCommand.Run(pakage_3);
 

@@ -11,3 +11,7 @@ Here you can follow these guys.
 | ? | Fatemeh Vahdati | [blog](https://www.linkedin.com/in/fatemeh-vahdati-259235b5/) |
 | ? | Nazanin Abbasi | [blog](https://www.linkedin.com/in/n-abbasi/) |
 | ? | Niloo Mont | [blog](https://www.linkedin.com/in/niloufar-mont/) |
+| ? | Hamidreza Rahmani| [blog](https://www.linkedin.com/in/hamidreza-rahmani-67730a198/) |
+| ? | Amir Fazlali| [blog](https://www.linkedin.com/in/amir-fazlali//) |
+| ? | Mojtaba Valizadeh| [blog](https://www.linkedin.com/in/mojtaba-valizade/) |
+| ? | Sepehr Sherian | [blog](https://www.linkedin.com/in/sepehr-shairian-3b1024109) |

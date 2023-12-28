@@ -1,4 +1,4 @@
-﻿namespace class_project;
+namespace class_project;
 
 public class Class1
 {
